@@ -8,7 +8,7 @@ provider "aws" {
 
 provider "aws" {
   alias   = "use1"
-  region  = "eu-west-2"
+  region  = "us-east-1"
   profile = "kallumcooper"
   default_tags {
     tags = local.tags

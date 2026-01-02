@@ -12,3 +12,7 @@ output "acm_certificate_arn" {
   description = "ACM certificate ARN in us-east-1 (for CloudFront)."
   value       = aws_acm_certificate.site.arn
 }
+
+output "route53_zone_id" {
+  value = aws_route53_zone.root.zone_id
+}
