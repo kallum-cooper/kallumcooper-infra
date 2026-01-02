@@ -1,0 +1,14 @@
+enviroments/prod/site/.terraform.lock.hcl
+enviroments/prod/site/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/LICENSE.txt
+enviroments/prod/site/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+.gitignore
+enviroments/prod/site/terraform.tfstate
+enviroments/prod/site/terraform.tfstate.backup
+enviroments/prod/site/terraform.tfstate
+enviroments/prod/site/terraform.tfstate
+
+# Generic Terraform ignores
+*.tfstate
+*.tfstate.backup
+.terraform/
+

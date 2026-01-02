@@ -13,6 +13,7 @@ resource "aws_acm_certificate" "site" {
 }
 
 resource "aws_route53_record" "acm_validation" {
+  allow_overwrite = true
   for_each = {
     for dvo in aws_acm_certificate.site.domain_validation_options :
     dvo.domain_name => {
