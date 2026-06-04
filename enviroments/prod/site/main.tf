@@ -26,3 +26,10 @@ module "cdn" {
   aliases             = local.site_domains
   tags                = local.tags
 }
+
+module "site_visit_counter" {
+  source = "git::https://github.com/kallum-cooper/terraform-modules.git//modules/site-visit-counter?ref=main"
+
+  name            = "kallumcooper-site"
+  allowed_origins = ["https://kallumcooper.co.uk"]
+}

@@ -41,3 +41,8 @@ output "cloudfront_distribution_id" {
   value       = module.cdn.distribution_id
   description = "CloudFront distribution ID."
 }
+
+output "visit_counter_url" {
+  value       = module.site_visit_counter.counter_url
+  description = "URL that increments and returns the site visit count."
+}
