@@ -30,6 +30,9 @@ module "cdn" {
 module "site_visit_counter" {
   source = "git::https://github.com/kallum-cooper/terraform-modules.git//modules/site-visit-counter?ref=main"
 
-  name            = "kallumcooper-site"
-  allowed_origins = ["https://kallumcooper.co.uk"]
+  name = "kallumcooper-site"
+  allowed_origins = [
+    "https://kallumcooper.co.uk",
+    "https://www.kallumcooper.co.uk",
+  ]
 }
