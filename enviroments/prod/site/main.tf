@@ -18,7 +18,9 @@ module "origin_bucket" {
 data "aws_caller_identity" "current" {}
 
 module "cdn" {
-  source = "git::https://github.com/kallum-cooper/terraform-modules.git//modules/cloudfront-static-site?ref=v0.1.1"
+  source = "git::https://github.com/kallum-cooper/terraform-modules.git//modules/cloudfront-static-site?ref=94f61503b966fef25f576afbaed4bc1b15f49d3f"
+
+  directory_indexes_enabled = true
 
   name                = "kc-${var.environment}-site"
   origin_domain_name  = module.origin_bucket.bucket_regional_domain_name
